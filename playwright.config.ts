@@ -16,6 +16,7 @@ export default defineConfig({
     testIdAttribute: 'data-test', // saucedemo нь data-test атрибут ашигладаг -> getByTestId
     trace: 'retain-on-failure',
     screenshot: 'only-on-failure',
+    video: 'on',                  // тест бүрийн бичлэг (HTML тайланд хавсрагдана)
   },
   projects: [
     { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
